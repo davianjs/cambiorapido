@@ -1,0 +1,198 @@
+/* === FONT IMPORT === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* === ESTILOS GERAIS E MOBILE (MOBILE-FIRST) === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif; /* Poppins as default font */
+}
+
+body {
+    background: #f3f5f7;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: #1b7f3a;
+    font-size: 24px;
+}
+
+.refresh-btn {
+    background: #1b7f3a;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.refresh-btn:hover {
+    background-color: #14622d;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.converter input,
+.converter select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.currency-select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.swap {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result h3 {
+    color: #1b7f3a;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 12px 5px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+.up {
+    color: #1b7f3a;
+    font-weight: bold;
+}
+
+.down {
+    color: #cc0000;
+    font-weight: bold;
+}
+
+.news-list {
+    list-style: none;
+}
+
+.news-list li {
+    margin-bottom: 15px;
+}
+
+.news-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Changed hover effect as requested */
+.news-list a:hover strong {
+    text-decoration: none; /* Removed underline */
+    color: #1b7f3a; /* Changed color to green */
+}
+
+.news-list strong {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.news-list small {
+    color: #777;
+}
+
+
+/* === TABLET BREAKPOINT === */
+@media (min-width: 768px) {
+    body {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .news {
+        grid-column: 1 / -1; 
+    }
+}
+
+/* === DESKTOP BREAKPOINT === */
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .news {
+        grid-column: auto;
+    }
+}

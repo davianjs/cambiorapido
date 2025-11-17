@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickChange</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>QuickChange</h1>
+        <button class="refresh-btn">Refresh Data</button>
+    </header>
+
+    <div class="container">
+        <div class="card converter">
+            <h2>Currency Converter</h2>
+            <p class="subtitle">From one currency to another</p>
+            <input type="number" id="converter-amount" value="1">
+            <div class="currency-select">
+                <select id="from-currency"></select>
+                <span class="swap">⇄</span>
+                <select id="to-currency"></select>
+            </div>
+            <div class="result">
+                <p id="converter-result-text">1 USD =</p>
+                <h3 id="converter-result-value">5.4321 BRL</h3>
+            </div>
+        </div>
+
+        <div class="card quotes">
+            <h2>Live Quotes</h2>
+            <p class="subtitle">vs. US Dollar (USD)</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Rate</th>
+                        <th>Variation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic content will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card news">
+            <h2>Financial News</h2>
+            <p class="subtitle">Latest business updates</p>
+            <ul class="news-list">
+                <!-- Dynamic content will be inserted here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
