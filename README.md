@@ -25,8 +25,8 @@ Para rodar este projeto na sua máquina, você vai precisar do Node.js instalado
 
 1.  **Clone o repositório:**
     ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
-    cd seu-repositorio
+    git clone https://github.com/davianjs/cambiorapido.git
+    cd cambiorapido
     ```
 
 2.  **Instale as dependências:**
